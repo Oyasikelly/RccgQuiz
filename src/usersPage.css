@@ -1,0 +1,127 @@
+/** @format */
+.UserContainer {
+  width: auto;
+  height: 100vh;
+
+  background: linear-gradient(to bottom, #efffe8, #82ce43a6, #599940),
+    url(../public/Images/quizLiveBackground.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 20rem;
+  color: var(--white-color);
+  position: relative;
+}
+
+.userImage {
+  width: 65px;
+  height: 65px;
+  border: 1px solid var(--LightTextColor);
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userId {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.userIdContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.fa-reorder:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.fa-user-edit {
+  font-size: 3.5rem;
+}
+/* .UserContainer label {
+  margin-left: 0.5rem;
+} */
+.selectType {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+.selectType h2 {
+  margin-bottom: 1rem;
+}
+.selectQust {
+  font-size: 20px;
+}
+.UserContainer select {
+  border-radius: 0.3rem;
+  padding: 0.4rem 1rem;
+  outline: none;
+  width: fit-content;
+}
+#numOfQuest {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.UserContainer p {
+  max-width: 80%;
+  margin-top: 2rem;
+}
+.UserContainer button {
+  margin-top: 2rem;
+}
+.menueIcon {
+  width: 20px;
+  height: 20px;
+  background: aqua;
+  cursor: pointer;
+}
+.userMenue {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  backdrop-filter: blur(5px);
+}
+.overlayMenue {
+  width: 50%;
+  height: 100vh;
+  padding: 2rem 4rem;
+  background: linear-gradient(
+    to bottom,
+    var(--LightTextColor),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.menueContent {
+  width: 100%;
+}
+.close {
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.close:hover {
+  text-decoration: underline;
+  color: var(--LightTextColor);
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: flex;
+}

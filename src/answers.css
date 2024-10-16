@@ -1,0 +1,57 @@
+/** @format */
+
+.Answers {
+  width: auto;
+  height: fit-content;
+  background: linear-gradient(
+    to bottom,
+    var(--LightTextColor),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 3rem 16rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.Answers main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 20px;
+}
+
+.Answers main .solu_container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1 3rem;
+  height: fit-content;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.Answers main .solu_container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 1px 5px 5px 5px rgba(18, 27, 16, 0.726);
+}
+.correctAnswer {
+  background: var(--LightTextColor);
+  padding: 1rem;
+}
+.wrongAnswer {
+  background: rgba(255, 0, 0, 0.575);
+  padding: 1rem;
+}
+.userAnswer {
+  background: var(--secondary-color);
+  padding: 1rem;
+}

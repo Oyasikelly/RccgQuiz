@@ -1,0 +1,75 @@
+/** @format */
+
+.signUpContainer {
+  background: linear-gradient(to bottom, #efffe8, #82ce43a6, #599940),
+    url(../public/Images/quizLiveBackground.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: auto;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background: url(../public/Images/repeating-chevrons.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+  color: var(--text-color);
+  padding: 1rem 2rem 2rem 2rem;
+  box-shadow: 1px 5px 5px 5px var(--secondary-color);
+}
+.signUp form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid var(--primary-color); */
+}
+.signUp label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0.3rem;
+}
+.signUp form input,
+.signUp form select {
+  /* width: 100%; */
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  background-color: var(--white-color);
+}
+.signUp form input:focus {
+  border: 1px solid var(--text-color);
+}
+.signUp a {
+  width: fit-content;
+  align-self: center;
+  margin-top: 3rem;
+}
+.subBtn {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  align-self: center;
+  transition: opacity 0.4s ease-in;
+  cursor: pointer;
+}
+
+.subBtn:hover {
+  opacity: 0.8;
+}
+.subBtn:active {
+  opacity: 0.4;
+}

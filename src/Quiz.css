@@ -1,0 +1,79 @@
+/** @format */
+.Quiz {
+  width: auto;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--LightTextColor),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 3rem 16rem;
+}
+.Quiz header {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Quiz main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: 20px;
+}
+
+/* Objective */
+.ObjQuestion {
+  border: 1px solid var(--LightTextColor);
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ObjOptions {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* width: 40%; */
+  margin-top: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.ObjOptions p {
+  margin: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: 1px solid var(--LightTextColor);
+  transition: background 0.5s ease-in;
+  cursor: pointer;
+}
+
+.ObjOptions p:hover {
+  background: var(--LightTextColor);
+}
+
+.activeAns {
+  background-color: var(--LightTextColor);
+}
+.selected {
+  background-color: aqua;
+}
+
+/* .ObjAns .Ans {
+  position: relative;
+} */
+.Quiz footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Quiz footer span {
+  align-self: flex-end;
+}

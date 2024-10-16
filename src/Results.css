@@ -1,0 +1,55 @@
+/** @format */
+
+.Results {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100vh;
+  background: url(../public/Images/quizLiveBackground.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 16rem;
+  position: relative;
+  overflow: scroll;
+}
+.Results::-webkit-scrollbar {
+  display: none;
+}
+.Results .resultContainer {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--LightTextColor),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+.Results .resultContainer {
+  border-radius: 1rem;
+  padding: 3rem 0;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.percentageOfPerformance {
+  box-shadow: 4px 2px 5px 4px var(--secondary-color);
+  width: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  background: url(../public/Images/InstructionBackground.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--LightTextColor);
+}
+
+.Results footer {
+  margin-top: 2rem;
+  align-self: center;
+}
+.Results .correctAnswer {
+  margin-left: 0.5rem;
+}

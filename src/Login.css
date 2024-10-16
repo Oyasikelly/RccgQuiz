@@ -1,0 +1,58 @@
+/** @format */
+.LoginContainer {
+  background: linear-gradient(to bottom, #efffe8, #82ce43a6, #599940),
+    url(../public/Images/quizLiveBackground.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LogIn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../public/Images/repeating-chevrons.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  padding-bottom: 7.5rem;
+  /* margin-top: 2rem; */
+  box-shadow: 1px 5px 5px 5px var(--secondary-color);
+}
+.LogIn form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.LogIn label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.LogIn input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  margin-bottom: 1rem;
+}
+.LogIn input:focus {
+  border: 1px solid var(--text-color);
+}
+
+.LogIn a {
+  width: fit-content;
+  align-self: center;
+}
+.LogIn .subBtn {
+  align-self: center;
+  margin-top: 2rem;
+  border: 1px solid var(--primary-color);
+}
