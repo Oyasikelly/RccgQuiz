@@ -2,301 +2,361 @@
   {
     "Question": "1. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 1 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 1
   },
   {
     "Question": "2. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 2 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 2
   },
   {
     "Question": "3. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 3 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 3
   },
   {
     "Question": "4. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 4 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 4
   },
   {
     "Question": "5. Who is ruling the sinful lust of men?",
     "Answer": "Devil",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 5 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 5
   },
   {
     "Question": "6. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 6 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 6
   },
   {
     "Question": "7. ______ discovered the physical things in nature ?",
     "Answer": "Scientist",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 7 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 7
   },
   {
     "Question": "8. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 8 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 8
   },
   {
     "Question": "9. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 9 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 9
   },
   {
     "Question": "10. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 10 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 10
   },
   {
     "Question": "11. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 11 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 11
   },
   {
     "Question": "12. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 12 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 12
   },
   {
     "Question": "13. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 13 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 13
   },
   {
     "Question": "14. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 14 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 14
   },
   {
     "Question": "15. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 15 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 15
   },
   {
     "Question": "16. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 16 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 16
   },
   {
     "Question": "17. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 17 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 17
   },
   {
     "Question": "18. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 18 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 18
   },
   {
     "Question": "19. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 19 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 19
   },
   {
     "Question": "20. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 20 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 20
   },
   {
     "Question": "21. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 21 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 21
   },
   {
     "Question": "22. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 22 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 22
   },
   {
     "Question": "23. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 23 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 23
   },
   {
     "Question": "24. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 24 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 24
   },
   {
     "Question": "25. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 25 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 25
   },
   {
     "Question": "26. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 26 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 26
   },
   {
     "Question": "27. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 27 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 27
   },
   {
     "Question": "28. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 28 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 28
   },
   {
     "Question": "29. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 29 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 29
   },
   {
     "Question": "30. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 30 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 30
   },
   {
     "Question": "31. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 31 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 31
   },
   {
     "Question": "32. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 32 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 32
   },
   {
     "Question": "33. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 33 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 33
   },
   {
     "Question": "34. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 34 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 34
   },
   {
     "Question": "35. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 35 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 35
   },
   {
     "Question": "36. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 36 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 36
   },
   {
     "Question": "37. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 37 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 37
   },
   {
     "Question": "38. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 38 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 38
   },
   {
     "Question": "39. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 39 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 39
   },
   {
     "Question": "40. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 40 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 40
   },
   {
     "Question": "41. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 41 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 41
   },
   {
     "Question": "42. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 42 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 42
   },
   {
     "Question": "43. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 43 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 43
   },
   {
     "Question": "44. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 44 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 44
   },
   {
     "Question": "45. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 45 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 45
   },
   {
     "Question": "46. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 46 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 46
   },
   {
     "Question": "47. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 47 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 47
   },
   {
     "Question": "48. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 48 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 48
   },
   {
     "Question": "49. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 49 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 49
   },
   {
     "Question": "50. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 50 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 50
   },
   {
     "Question": "51. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 51 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 51
   },
   {
     "Question": "52. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 52 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 52
   },
   {
     "Question": "53. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 53 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 53
   },
   {
     "Question": "54. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 54 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 54
   },
   {
     "Question": "55. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 55 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 55
   },
   {
     "Question": "56. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 56 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 56
   },
   {
     "Question": "57. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 57 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 57
   },
   {
     "Question": "58. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 58 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 58
   },
   {
     "Question": "59. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 59 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 59
   },
   {
     "Question": "60. Who is the creator of heaven and earth?",
     "Answer": "God",
-    "Options": { "option": ["God", "Angels", "Scientist", "Devil"], "id": 60 }
+    "Options": ["God", "Angels", "Scientist", "Devil"],
+    "id": 60
   }
 ]

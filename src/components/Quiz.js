@@ -17,9 +17,19 @@ export default function Quiz({
   setShowSelectedAnswer,
 }) {
   const [numberOfQuestAnswered, setNumberOfQuestAnswered] = useState(0);
+  const [selectOption, setselectOption] = useState(
+    new Array(selectedQuestNum.length).fill(null)
+  );
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
-  // Selected Number Of Questions Array
-  const selectedQuestNumArray = selectedQuestNum;
+  // Update the number of questions answered when selectOption changes
+  useEffect(() => {
+    const selectedAnswers = selectOption.filter((value) => value !== null);
+    setNumberOfQuestAnswered(selectedAnswers.length);
+    setUserAnswers(selectedAnswers);
+  }, [selectOption, setNumberOfQuestAnswered, setUserAnswers]);
+
+  // Timer Logic
   useEffect(() => {
     let timerId;
     if (isRunning && timeLeft > 0) {
@@ -29,8 +39,7 @@ export default function Quiz({
     }
 
     return () => clearTimeout(timerId); // Clean up the timer on unmount
-    //eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [timeLeft, isRunning]);
+  }, [timeLeft, isRunning, setIsRunning, setTimeLeft]);
 
   // Convert seconds to a readable minutes:seconds format
   const formatTime = (seconds) => {
@@ -39,33 +48,27 @@ export default function Quiz({
     return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
   };
 
-  const [selectOption, setselectOption] = useState(
-    new Array(selectedQuestNumArray.length).map(() => null)
-  );
-
-  // Counting Answered Questions
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
   // Handle selecting an option
   function handleOptionClick(option) {
     const updatedOptions = [...selectOption];
-    updatedOptions[currentQuestionIndex] = option; // update the selected option for the current question
+    updatedOptions[currentQuestionIndex] = option; // Update the selected option for the current question
     setselectOption(updatedOptions);
-    // console.log(updatedOptions);
   }
 
   // Move to the next question
   function handleNext() {
-    if (currentQuestionIndex < selectedQuestNumArray.length - 1) {
+    if (currentQuestionIndex < selectedQuestNum.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   }
-  // Move to the Previous quesion
+
+  // Move to the Previous question
   function handlePrev() {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
+
   return (
     <div className="Quiz">
       <header>
@@ -73,7 +76,7 @@ export default function Quiz({
           <img src="/" alt="userImg" />
         </div>
         <span>
-          {numberOfQuestAnswered} out of {selectedQuestNumArray.length}
+          {numberOfQuestAnswered} out of {selectedQuestNum.length}
         </span>
 
         <div className="timer">
@@ -85,16 +88,10 @@ export default function Quiz({
       <main>
         <Objective
           selectOption={selectOption}
-          setselectOption={setselectOption}
           currentQuestionIndex={currentQuestionIndex}
-          setCurrentQuestionIndex={setCurrentQuestionIndex}
           handleOptionClick={handleOptionClick}
-          selectedQuestNumArray={selectedQuestNumArray}
-          numberOfQuestAnswered={numberOfQuestAnswered}
-          setNumberOfQuestAnswered={setNumberOfQuestAnswered}
+          selectedQuestNum={selectedQuestNum}
           setObjectiveAnswers={setObjectiveAnswers}
-          setUserAnswers={setUserAnswers}
-          setShowSelectedAnswer={setShowSelectedAnswer}
         />
       </main>
       <footer>
@@ -106,11 +103,11 @@ export default function Quiz({
           Prev
         </button>
 
-        {numberOfQuestAnswered !== selectedQuestNumArray.length ? (
+        {numberOfQuestAnswered !== selectedQuestNum.length ? (
           <button
             className="subBtn"
             onClick={handleNext}
-            disabled={currentQuestionIndex === selectedQuestNumArray.length - 1}
+            disabled={currentQuestionIndex === selectedQuestNum.length - 1}
           >
             Next
           </button>
@@ -126,35 +123,27 @@ export default function Quiz({
 
 function Objective({
   selectOption,
-  setselectOption,
   currentQuestionIndex,
-  setCurrentQuestionIndex,
   handleOptionClick,
-  selectedQuestNumArray,
-  numberOfQuestAnswered,
-  setNumberOfQuestAnswered,
+  selectedQuestNum,
   setObjectiveAnswers,
-  setUserAnswers,
 }) {
-  const currentQuestion = selectedQuestNumArray[currentQuestionIndex];
+  const currentQuestion = selectedQuestNum[currentQuestionIndex];
+
   return (
     <div className="Objective">
       <p className="ObjQuestion">{currentQuestion.Question}</p>
       <div className="ObjOptions">
-        {currentQuestion.Options.option.map((option, index) => {
-          function quesionAnswered(option) {
+        {currentQuestion.Options.map((option, index) => {
+          // Set the objective answers once a question is answered
+          function quesionAnswered() {
             setObjectiveAnswers(
-              selectedQuestNumArray
+              selectedQuestNum
                 .filter((value) => value !== undefined)
                 .map((answer) => answer.Answer)
             );
-            // toSaveSelectedId.push(currentQuestion.Options.id);
-            const selectedAnswers = selectOption.filter(
-              (value) => value !== undefined
-            );
-            setNumberOfQuestAnswered(selectedAnswers.length);
-            setUserAnswers(selectedAnswers);
           }
+
           return (
             <p
               className={` ${
@@ -163,7 +152,7 @@ function Objective({
               key={index}
               onClick={() => {
                 handleOptionClick(option);
-                quesionAnswered(option);
+                quesionAnswered();
               }}
             >
               {option}
