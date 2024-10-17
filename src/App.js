@@ -32,6 +32,7 @@ export default function App() {
     category: "",
     className: "",
   });
+  const [checkedBox, setCheckedBox] = useState(false);
   const [users, setUsers] = useState(signUpData);
 
   const [selectedTime, setSelectedTime] = useState("select");
@@ -67,6 +68,8 @@ export default function App() {
             path="/UserPage"
             element={
               <UserPage
+                checkedBox={checkedBox}
+                setCheckedBox={setCheckedBox}
                 users={users}
                 timeLeft={timeLeft}
                 setTimeLeft={setTimeLeft}
@@ -84,6 +87,7 @@ export default function App() {
             path="/Quiz"
             element={
               <Quiz
+                checkedBox={checkedBox}
                 timeLeft={timeLeft}
                 setTimeLeft={setTimeLeft}
                 isRunning={isRunning}

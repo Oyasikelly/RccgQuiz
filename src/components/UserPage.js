@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import ObjQustAns from "../ObjQustAns.json";
 
 export default function UserPage({
+  checkedBox,
+  setCheckedBox,
   users,
   selectedTime,
   setSelectedTime,
@@ -15,6 +17,14 @@ export default function UserPage({
   setNumberOfQuestions,
   setSelectedQuestNum,
 }) {
+  // Handling Checked Objective
+  function handleCheckedObjective(e) {
+    // const { name, value } = e.target;
+    setCheckedBox(() => !checkedBox);
+    // console.log(name, value);
+  }
+  console.log(checkedBox);
+
   // handling the time
   const timeOptions = ["select", 60, 50, 40, 30, 20, 10].map((min) =>
     min === "select" ? 0 : min * 60
@@ -69,7 +79,11 @@ export default function UserPage({
         <div className="selectType">
           <h2>Select examination type</h2>
           <div>
-            <input type="checkBox" />
+            <input
+              type="checkBox"
+              value={checkedBox}
+              onChange={handleCheckedObjective}
+            />
             <label htmlFor="Objective">Objective</label>
           </div>
           {/* <div>
@@ -114,7 +128,7 @@ export default function UserPage({
           time will lead to automatic submission. Results will be displayed at
           the end of the examination. <br /> <strong>Good Luck X!</strong>
         </p>
-        {selectedTime > 0 && (
+        {selectedTime > 0 && checkedBox === true && (
           <NavLink to="/Quiz">
             <button
               onClick={() => {
@@ -172,62 +186,3 @@ function UserSideMenue({ opemenue, handleCloseMenue }) {
     </div>
   );
 }
-
-// function CountdownTimer() {
-//   // Time intervals in minutes (converted to seconds)
-
-//   // State to store selected time and countdown time
-//   const [selectedTime, setSelectedTime] = useState(60 * 60); // Default is 60 minutes
-//   const [timeLeft, setTimeLeft] = useState(selectedTime);
-//   const [isRunning, setIsRunning] = useState(false); // To track if the timer is running
-
-//   // Convert seconds to a readable minutes:seconds format
-//   const formatTime = (seconds) => {
-//     const minutes = Math.floor(seconds / 60);
-//     const remainingSeconds = seconds % 60;
-//     return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
-//   };
-
-//   useEffect(() => {
-//     let timerId;
-//     if (isRunning && timeLeft > 0) {
-//       timerId = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
-//     } else if (timeLeft === 0) {
-//       setIsRunning(false); // Stop the timer when it reaches 0
-//     }
-
-//     return () => clearTimeout(timerId); // Clean up the timer on unmount
-//   }, [timeLeft, isRunning]);
-
-//   // Handle time selection change
-//   const handleTimeChange = (event) => {
-//     const newTime = parseInt(event.target.value);
-//     setSelectedTime(newTime); // Update selected time
-//     setTimeLeft(newTime); // Reset the timer to the new time
-//     setIsRunning(false); // Stop the timer
-//   };
-
-//   // Reset the timer
-//   const resetTimer = () => {
-//     setTimeLeft(selectedTime);
-//     setIsRunning(false);
-//   };
-
-//   return (
-//     <div>
-//       <h1>Countdown Timer</h1>
-//       <h2>Time Left: {formatTime(timeLeft)}</h2>
-
-//       {/* Dropdown to select the time */}
-//       <label>Select time: </label>
-//
-
-//       <div>
-//         <button onClick={startTimer} disabled={isRunning}>
-//           Start
-//         </button>
-//         <button onClick={resetTimer}>Reset</button>
-//       </div>
-//     </div>
-//   );
-// }

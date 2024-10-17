@@ -1,9 +1,10 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Quiz({
+  checkedBox,
   selectedTime,
   isRunning,
   timeLeft,
@@ -22,6 +23,7 @@ export default function Quiz({
   );
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
 
+  const navigateToResults = useNavigate();
   // Update the number of questions answered when selectOption changes
   useEffect(() => {
     const selectedAnswers = selectOption.filter((value) => value !== null);
@@ -36,10 +38,11 @@ export default function Quiz({
       timerId = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
     } else if (timeLeft === 0) {
       setIsRunning(false); // Stop the timer when it reaches 0
+      navigateToResults("/results");
     }
 
     return () => clearTimeout(timerId); // Clean up the timer on unmount
-  }, [timeLeft, isRunning, setIsRunning, setTimeLeft]);
+  }, [timeLeft, isRunning, setIsRunning, setTimeLeft, navigateToResults]);
 
   // Convert seconds to a readable minutes:seconds format
   const formatTime = (seconds) => {
@@ -70,54 +73,62 @@ export default function Quiz({
   }
 
   return (
-    <div className="Quiz">
-      <header>
-        <div className="userImage">
-          <img src="/" alt="userImg" />
-        </div>
-        <span>
-          {numberOfQuestAnswered} out of {selectedQuestNum.length}
-        </span>
-
-        <div className="timer">
-          <div className="countDown">
-            <span>{formatTime(timeLeft)}</span>
+    <>
+      <div className="Quiz">
+        <header>
+          <div className="userImage">
+            <img src="/" alt="userImg" />
           </div>
-        </div>
-      </header>
-      <main>
-        <Objective
-          selectOption={selectOption}
-          currentQuestionIndex={currentQuestionIndex}
-          handleOptionClick={handleOptionClick}
-          selectedQuestNum={selectedQuestNum}
-          setObjectiveAnswers={setObjectiveAnswers}
-        />
-      </main>
-      <footer>
-        <button
-          className="subBtn"
-          onClick={handlePrev}
-          disabled={currentQuestionIndex === 0}
-        >
-          Prev
-        </button>
+          <span>
+            {numberOfQuestAnswered} out of {selectedQuestNum.length}
+          </span>
 
-        {numberOfQuestAnswered !== selectedQuestNum.length ? (
+          <div className="timer">
+            <div className="countDown">
+              <span>{formatTime(timeLeft)}</span>
+            </div>
+          </div>
+        </header>
+        <main>
+          <Objective
+            selectOption={selectOption}
+            currentQuestionIndex={currentQuestionIndex}
+            handleOptionClick={handleOptionClick}
+            selectedQuestNum={selectedQuestNum}
+            setObjectiveAnswers={setObjectiveAnswers}
+          />
+
+          {numberOfQuestAnswered === 0 && (
+            <div className="endTest">
+              <NavLink to="/results"> End test </NavLink>
+            </div>
+          )}
+        </main>
+        <footer>
           <button
             className="subBtn"
-            onClick={handleNext}
-            disabled={currentQuestionIndex === selectedQuestNum.length - 1}
+            onClick={handlePrev}
+            disabled={currentQuestionIndex === 0}
           >
-            Next
+            Prev
           </button>
-        ) : (
-          <NavLink to="/results">
-            <button className="subBtn">Submit</button>
-          </NavLink>
-        )}
-      </footer>
-    </div>
+
+          {numberOfQuestAnswered !== selectedQuestNum.length ? (
+            <button
+              className="subBtn"
+              onClick={handleNext}
+              disabled={currentQuestionIndex === selectedQuestNum.length - 1}
+            >
+              Next
+            </button>
+          ) : (
+            <NavLink to="/results">
+              <button className="subBtn">Submit</button>
+            </NavLink>
+          )}
+        </footer>
+      </div>
+    </>
   );
 }
 
