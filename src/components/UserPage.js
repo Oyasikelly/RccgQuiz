@@ -23,7 +23,6 @@ export default function UserPage({
     setCheckedBox(() => !checkedBox);
     // console.log(name, value);
   }
-  console.log(checkedBox);
 
   // handling the time
   const timeOptions = ["select", 60, 50, 40, 30, 20, 10].map((min) =>
@@ -128,7 +127,7 @@ export default function UserPage({
           time will lead to automatic submission. Results will be displayed at
           the end of the examination. <br /> <strong>Good Luck X!</strong>
         </p>
-        {selectedTime > 0 && checkedBox === true && (
+        {selectedTime > 0 && checkedBox === true && numberOfQuestions !== 0 && (
           <NavLink to="/Quiz">
             <button
               onClick={() => {

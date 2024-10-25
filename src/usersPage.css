@@ -2,7 +2,6 @@
 .UserContainer {
   width: auto;
   height: 100vh;
-
   background: linear-gradient(to bottom, #efffe8, #82ce43a6, #599940),
     url(../public/Images/quizLiveBackground.gif);
   background-repeat: no-repeat;

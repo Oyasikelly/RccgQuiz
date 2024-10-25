@@ -1,0 +1,33 @@
+[
+  {
+    "stageOne": [
+      {
+        "label": { "htmlFor": "parishName", "title": "Parish Name" },
+        "input": {
+          "type": "text",
+          "name": "parishName",
+          "placeholder": "Enter parish name",
+          "value": 1
+        }
+      },
+      {
+        "label": { "htmlFor": "personalName", "title": "Personal Name" },
+        "input": {
+          "type": "text",
+          "name": "personalName",
+          "placeholder": "Enter personal name",
+          "value": 2
+        }
+      },
+      {
+        "label": { "htmlFor": "phoneNumber", "title": "Phone Number" },
+        "input": {
+          "type": "text",
+          "name": "phoneNumber",
+          "placeholder": "Enter Phone Number",
+          "value": 3
+        }
+      }
+    ]
+  }
+]
